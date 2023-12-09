@@ -1,158 +1,511 @@
-<html lang="en"><head>
-        <title>Bom & Vit</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <meta name="author" content="Bom & Vit">
-        <meta name="description" content="This is the developer page for Truyen 360 Application">
-        <meta name="keywords" content="Bom and Vit">
-        <meta name="theme-color" content="#2196F3">
-	<link rel="preload" href="https://cdn.dribbble.com/users/1223630/screenshots/8115260/char_still_2x.gif?resize=400x300&vertical=center" as="image">
-        <link rel="shortcut icon" href="https://cdn.dribbble.com/users/1223630/screenshots/8115260/char_still_2x.gif?resize=400x300&vertical=center">
-        <link rel="apple-touch-icon" href="https://cdn.dribbble.com/users/1223630/screenshots/8115260/char_still_2x.gif?resize=400x300&vertical=center">
-        <link rel="icon" sizes="192x192" href="https://cdn.dribbble.com/users/1223630/screenshots/8115260/char_still_2x.gif?resize=400x300&vertical=center">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap">
-        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="styles.css">
-
-        <style>
-            html, body { height: 100%;}
-            #header {
-	            background:#2196F3;
-	            height:144px
-            }
-            .jt-content {
-	            text-align: center;
-	            position:absolute;
-	            margin: 0px;
-	            width:100%;
-                height: 100%;
-            }
-            .photo {
-	            width: 144px;
-	            height: 144px;
-	            display: block;
-	            margin-left: auto;
-	            margin-right: auto;
-	            margin-top: -75px;
-	            border-radius: 75px;
-	            -webkit-border-radius: 75px;
-	            -moz-border-radius: 75px;
-	            background: url(images/jomar-icon.png) no-repeat;
-	            background-size: cover;
-	            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            }
-            .icon {
-	            margin:4px;
-	            width:32px;
-                border-radius: 16px;
-            }
-            #main-content > footer {
-                position: sticky;
-                top: 90vh;
-            }
-        </style>
-        <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202312050101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-76M4VQ55KS&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>
-        <script data-ad-client="ca-pub-1476112416134857" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
-    <meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="https://fundingchoicesmessages.google.com/i/ca-pub-1476112416134857?ers=2"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxUp1p1rSA1NN8PZMqaa1eJAfz05E1SNXuRGzmHnMG_ZmXur9rF1LdkuhTBWWtPN0_pfkMjePaBz_wORRmQ9J_sA--ZqMrMpp_CKXV9wfAux8k546tWieqYwHvSE9rTiItzoqc0Ziw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzAyMTA5MjMwLDc3MDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cudGlnY2FsLmNvbS8iLG51bGwsW1s4LCJRN3FrOGFXLUtrayJdLFs5LCJ2aSJdLFsxOCwiW1tbMF1dXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWmDVZjfQaYh5YcIC-uF743FJrftrBvtf1Mq66Fe61b5WLaVwJvIyZz62_HbLC71zOf97BDNOdtmJvZDo1Dc_GOYtF4f52F4phJr-eJ5fWHPXf2Ef-7RqNy3rSQS1CUqJzpnlDiSg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzAyMTA5MjMwLDg1MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LnRpZ2NhbC5jb20vIixudWxsLFtbOCwiUTdxazhhVy1La2siXSxbOSwidmkiXSxbMTgsIltbWzBdXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0"></script><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxX7Lzx-vbMM1nizXoDbDvQxuQPqTK0UgXdUffm_gmHoI3EgWWCeRcKthhB3RSSuGgRS7TIYuod1jQMaErr8tukxV_X1yiG8ryFebJcL7Lk8owlj_7qhzXm1E7do0_xlznZf29YUWg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzAyMTA5MjMyLDcwMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cudGlnY2FsLmNvbS8iLG51bGwsW1s4LCJRN3FrOGFXLUtrayJdLFs5LCJ2aSJdLFsxOCwiW1tbMF1dXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script></head>
-    <body>
-        <aside class="mdc-drawer mdc-drawer--modal">
-            <div class="mdc-drawer__header">
-                <h3 class="mdc-drawer__title">Bom & Vit</h3>
-            </div>
-            <div class="mdc-drawer__content">
-                <nav class="mdc-list">
-                    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-                    <span class="mdc-list-item__text">Home</span>
-                    </a>
-                    <a class="mdc-list-item" href="about.html" aria-current="page" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
-                    <span class="mdc-list-item__text">About</span>
-                    </a>
-                    <a class="mdc-list-item" href="projects/" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
-                    <span class="mdc-list-item__text">Apps and Projects</span>
-                    </a>
-                    <a class="mdc-list-item" href="books.html" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">menu_book</i>
-                    <span class="mdc-list-item__text">Books</span>
-                    </a>
-                    <a class="mdc-list-item" href="talks.html" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
-                    <span class="mdc-list-item__text">Talks and Workshops</span>
-                    </a>
-                    <a class="mdc-list-item" href="runs.html" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
-                    <span class="mdc-list-item__text">Runs</span>
-                    </a>
-                    <a class="mdc-list-item" href="contact.html" tabindex="-1">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">contact_support</i>
-                    <span class="mdc-list-item__text">Contact</span>
-                    </a>
-                </nav>
-            </div>
-        </aside>
-        <div class="mdc-drawer-scrim"></div>
-        <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
-            <div class="mdc-top-app-bar__row">
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="burger-menu" style="--mdc-ripple-fg-size: 31px; --mdc-ripple-fg-scale: 1.7200100806451613; --mdc-ripple-left: 11px; --mdc-ripple-top: -3px;">menu</a>
-                    <span class="mdc-top-app-bar__title">&nbsp;</span>
-                </section>
-            </div>
-        </header>
-        <div class="mdc-top-app-bar--fixed-adjust jt-content" id="main-content">
-            <div id="header">&nbsp;</div>
-            <div class="photo"></div>
-            <h1>Bom & Vit</h1>
-            <h2>Mobile Developer, Trainer, and Consultant</h2>
-        </div>
-	<div>
-            <div id="footer">&nbsp;</div>
-            <div class="photo"></div>
-            <h3>Description</h1>
-            <h4>Tựa đề: "Khám Phá Truyện Tranh Miễn Phí - App Đọc Truyện Online Cho Nam Giới"
-
-Mô tả ứng dụng:
-Chào mừng bạn đến với ứng dụng đọc truyện tranh miễn phí dành cho nam giới, nơi bạn có thể thỏa sức đam mê với hàng ngàn bộ truyện tranh hot từ thế giới anime và manga. Với ứng dụng đọc truyện online hàng đầu này, trải nghiệm đọc truyện miễn phí không giới hạn ngay trên chiếc điện thoại của bạn.
-
-Tính năng Nổi Bật:
-
-1. Đọc Truyện Miễn Phí Online: Hòa mình vào thế giới truyện tranh yêu thích mà không mất bất kỳ chi phí nào.
-2. Truyện Full và Độc Quyền: Cung cấp cả những tác phẩm truyện tranh đầy đủ và những bộ chỉ có trong ứng dụng.
-3. Cập Nhật Hàng Ngày: Hệ thống cập nhật chương mới liên tục, giúp bạn không bao giờ bỏ lỡ những phần mới nhất.
-4. Đa Dạng Thể Loại: Hành động, phiêu lưu, tình cảm - mọi thể loại đều có để bạn khám phá.
-
-Nội Dung:
-Ứng dụng đọc truyện tranh này không chỉ là nơi đơn thuần để đọc truyện full, mà còn là cánh cửa mở ra thế giới đặc sắc của truyện tranh với chất lượng cao. Bạn sẽ được đắm chìm vào không gian đa dạng với đủ mọi thể loại, từ những bức tranh anime đầy sức sống đến những câu chuyện truyện tranh sắc nét và chất lượng cao, đáp ứng đúng mong đợi của những người yêu thích truyện hd.
-
-Ứng dụng không chỉ giới thiệu đọc truyện miễn phí mà còn mang lại trải nghiệm đọc truyện chất lượng và thoải mái trên chiếc điện thoại của bạn. Thế giới truyện tranh tại đây không chỉ là nơi giải trí, mà còn là hành trình khám phá những câu chuyện độc đáo, sáng tạo, và đậm chất nghệ thuật.
-
-Bằng cách sử dụng ứng dụng đọc truyện tranh anime, bạn sẽ được đắm chìm vào những truyện tranh đỉnh cao với chất lượng hình ảnh độ nét cao. Tận hưởng không gian truyện tranh đa dạng và độc đáo, đặc biệt là khi bạn thỏa sức đọc truyện mọi lúc mọi nơi.
-
-Với khả năng đọc truyện miễn phí và tiện ích của truyện tranh manga, ứng dụng này sẽ là đối tác đắc lực, giúp bạn trải nghiệm thế giới truyện tranh một cách hoàn hảo. Hãy bắt đầu hành trình của bạn và khám phá thế giới tuyệt vời của đọc truyện tranh hd ngay hôm nay!</h2>
-        </div>
-        <script type="text/javascript">
-            const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-            const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
-            topAppBar.setScrollTarget(document.getElementById('main-content'));
-            topAppBar.listen('MDCTopAppBar:nav', () => {
-              drawer.open = !drawer.open;
-            });
-        </script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-20395667-14', 'auto');
-            ga('send', 'pageview');
-        </script>
+<html lang="en-US" class="hide-scroll"><iframe allow="join-ad-interest-group" data-tagging-id="AW-797221335" data-load-time="1702135521199" height="0" width="0" style="display: none; visibility: hidden;" src="https://td.doubleclick.net/td/rul/797221335?random=1702135521197&amp;cv=11&amp;fst=1702135521197&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3bt0v9101312129&amp;gcd=11l1l1l1l1&amp;dma=0&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fnicepage.com%2Fhtml-templates%2Fpreview%2Fwe-help-your-site-grow-4914174%3Fdevice%3Ddesktop&amp;ref=https%3A%2F%2Fnicepage.com%2Fht%2F4914174%2Fwe-help-your-site-grow-html-template&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=We%20help%20your%20site%20grow%20HTML%20Template%20Live%20Demo&amp;auid=1878838346.1702135491&amp;fledge=1&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B119.0.6045.105%7CChromium%3B119.0.6045.105%7CNot%253FA_Brand%3B24.0.0.0&amp;uamb=0&amp;uap=macOS&amp;uapv=13.6.1&amp;uaw=0&amp;data=event%3Dgtag.config"></iframe><head> 
+    <title>We help your site grow HTML Template Live Demo</title>
+    <meta name="Keywords">
+    <meta name="Description">
     
 
-<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1476112416134857&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1700778596&amp;plaf=1%3A2%2C2%3A2%2C7%3A2&amp;plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C8%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.tigcal.com%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1~2~4~6&amp;uach=WyJtYWNPUyIsIjEzLjYuMSIsImFybSIsIiIsIjExOS4wLjYwNDUuMTA1IixudWxsLDAsbnVsbCwiNjQiLFtbIkdvb2dsZSBDaHJvbWUiLCIxMTkuMC42MDQ1LjEwNSJdLFsiQ2hyb21pdW0iLCIxMTkuMC42MDQ1LjEwNSJdLFsiTm90P0FfQnJhbmQiLCIyNC4wLjAuMCJdXSwwXQ..&amp;dt=1702109229909&amp;bpp=1&amp;bdt=989&amp;idt=139&amp;shv=r20231206&amp;mjsv=m202312050101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=1066885674845&amp;frm=20&amp;pv=2&amp;ga_vid=928466404.1702109230&amp;ga_sid=1702109230&amp;ga_hid=1341768318&amp;ga_fc=1&amp;u_tz=420&amp;u_his=1&amp;u_h=900&amp;u_w=1440&amp;u_ah=875&amp;u_aw=1440&amp;u_cd=30&amp;u_sd=2&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1440&amp;bih=790&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31079923%2C31079930%2C31079979%2C95320868%2C95320885%2C31078663%2C31078665%2C31078668%2C31078670&amp;oid=2&amp;pvsid=3798258874189053&amp;tmod=923480428&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;fc=1920&amp;brdim=0%2C25%2C0%2C25%2C1440%2C25%2C1440%2C875%2C1440%2C790&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;td=1&amp;psd=W251bGwsbnVsbCxudWxsLDFd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=147" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20231206/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>
+
+
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+    <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font">
+
+
+
+
+
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-T7WWB0T53W&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" integrity="sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW" crossorigin="anonymous" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script src="https://connect.facebook.net/signals/config/251025992170426?v=next&amp;r=canary&amp;domain=nicepage.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
+    window.isAuthenticated = 0;
+    window.clientUserId = 0;
+    window.clientUserName = '';
+    window.userCountryCode = '';
+    window.logPageEvent = 1;
+    window.userHasAdsParams = 1;
+    window.utmSourceFromReferrer = 0;
+    window.currentLang = '';
+    window.baseUrl = 'html-templates';
+    window.currentUrl = 'html-templates';
+    window.np_userId = '';
+    window.isAmplitudeInitialized = false;
+    window.sha256Email = '';
+
+    function sendAnalyticsData(eventType, props, cb) {
+        var json = { data: {} };
+        json.userToken = np_userId;
+        json.data.adsParams = $.cookie('AdsParameters');
+        json.data.ga = $.cookie('_ga');
+        json.data.gac = $.cookie('_gac_UA-88868916-2');
+        json.data.userAgent = navigator.userAgent;
+        json.data.eventType = eventType;
+        json.data.props = props;
+        $.ajax({
+            'type': 'POST',
+            'url': '/Feedback/SendAdsLog',
+            'contentType': 'application/json; charset=utf-8',
+            'data': JSON.stringify(json),
+            'dataType': 'json',
+            'complete': cb || function() {}
+        });
+    }
+
+    function initializeAmplitudeUser() {
+        if (isAmplitudeInitialized) {
+            return;
+        }
+        isAmplitudeInitialized = true;
+
+        if (clientUserId > 0)
+        {
+            identifyAmplitudeUser(clientUserId, clientUserName);
+        }
+        else
+        {
+            identifyAmplitudeUser(null);
+        }
+    }
+
+    function sendAmplitudeAnalyticsData(eventName, eventProperties, userProperties, callback_function) {
+        initializeAmplitudeUser();
+
+        if (userProperties) {
+            if(userProperties.utm_source || userProperties.utm_campaign) {
+                var identify = new amplitude.Identify();
+                identify.setOnce("utm_campaign", userProperties.utm_campaign);
+                identify.setOnce("utm_source", userProperties.utm_source);
+                identify.setOnce("utm_content", userProperties.utm_content);
+                identify.setOnce("utm_term", userProperties.utm_term);
+                identify.setOnce("utm_page", userProperties.utm_page);
+                identify.setOnce("utm_page2", userProperties.utm_page);
+                identify.setOnce("referrer", userProperties.referrer);
+
+                amplitude.getInstance().identify(identify);
+
+                userProperties.utm_source_last = userProperties.utm_source;
+                userProperties.utm_campaign_last = userProperties.utm_campaign;
+                userProperties.utm_content_last = userProperties.utm_content;
+                userProperties.utm_term_last = userProperties.utm_term;
+                userProperties.utm_page_last = userProperties.utm_page;
+            }
+
+            var userProps = objectWithoutProperties(userProperties, ["utm_campaign", "utm_source","utm_content", "utm_term", "utm_page", "referrer"]);
+            amplitude.getInstance().setUserProperties(userProps);
+        }
+
+        if (!eventProperties) {
+            eventProperties = {};
+        }
+
+        eventProperties.WebSite = 'true';
+        eventProperties.IsAuthenticated = window.isAuthenticated;
+        eventProperties.country_code = getCountryCode();
+        eventProperties.lang = window.currentLang || '';
+
+        var fullPageUrl = window.location.pathname.split('?')[0];
+        eventProperties.full_page_url = fullPageUrl;
+        eventProperties.page_url = clearPageUrl(fullPageUrl);
+
+        if (typeof callback_function === 'function') {
+            amplitude.getInstance().logEvent(eventName, eventProperties, callback_function);
+        } else {
+            amplitude.getInstance().logEvent(eventName, eventProperties);
+        }
+    }
+
+    function identifyAmplitudeUser(userId, token) {
+        if (userId) {
+            amplitude.getInstance().setUserProperties({
+                "Token": token,
+                "UserId": userId
+            });
+        }
+
+        var identify = new amplitude.Identify();
+        amplitude.getInstance().identify(identify);
+        if (userId) {
+            amplitude.getInstance().setUserId(userId);
+        }
+    }
+
+    function sendAnalyticsFromUrl(referrer, pageType) {
+        var hash = window.location.hash;
+
+        var urlIsAvailable = typeof URL === "function" || (navigator.userAgent.indexOf('MSIE') !== -1 && typeof URL === 'object');
+        if (!urlIsAvailable) {
+            return;
+        }
+
+        var url = new URL(window.location.href);
+        if (hash && hash.indexOf('utm_') >= 0) {
+            url = new URL(window.location.origin + window.location.pathname + hash.replace('#', '?'));
+        }
+
+        if (!url.searchParams) {
+            return;
+        }
+
+        var utmParams = getUtmParams(url);
+        var gclidFromUrl = utmParams.gclid;
+        var utmParamsFromUrl = !!utmParams.utmSource || !!utmParams.utmCampaign || !!utmParams.gclid;
+        if (!utmParamsFromUrl && userHasAdsParams)
+        {
+            utmParams = getUtmParamsFromCookie();
+        }
+
+        var canLog = canLogToAmplitude();
+        if (utmParamsFromUrl || utmSourceFromReferrer) {
+            var fullPageUrl = window.location.pathname.split('?')[0];
+            var pageUrl = clearPageUrl(fullPageUrl);
+            var userProps = {
+                "utm_source": utmParams.utmSource,
+                "utm_campaign": utmParams.utmCampaign,
+                "utm_content": utmParams.utmContent,
+                "utm_term": utmParams.utmTerm,
+                "utm_page": getUtmPageValue(pageUrl),
+                "utm_lang": window.currentLang || '',
+                "referrer": referrer
+            };
+
+            if (gclidFromUrl) {
+                var landingUrl = pageUrl.startsWith('/') && pageUrl !== '/' ? pageUrl.substr(1) : pageUrl;
+                userProps.landing_page = landingUrl;
+
+                var event = {
+                    'Page': landingUrl,
+                    'Url': window.location.href,
+                    'utm_campaign_event': utmParams.utmCampaign
+                }
+                sendAmplitudeAnalyticsData('Landing Page', event, userProps);
+            } else {
+                var eventProps = {
+                    "utm_source": utmParams.utmSource,
+                    "utm_campaign": utmParams.utmCampaign,
+                    "utm_content": utmParams.utmContent,
+                    "utm_term": utmParams.utmTerm
+                };
+
+                if (utmParams.utmSource === "elastic") {
+                    sendAmplitudeAnalyticsData('Email Click', eventProps);
+                }
+
+                if (canLog) {
+                    sendAmplitudeAnalyticsData('Campaign', eventProps, userProps);
+                }
+            }
+        }
+
+        if (logPageEvent && canLog || (pageType === 'Pricing Page' && !window.isForbiddenCountry())) {
+            var pageEventProps = {
+                'type': pageType,
+                'accepted_country': isValidCountry(),
+                'force_log': !canLog
+            };
+
+            sendAmplitudeAnalyticsData('Page View', pageEventProps);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        setCountryCode('https://location.nicepagesrv.com/country');
+        setUserIdCookie();
+        updatePageViewCounter();
+
+        if (typeof gtag === 'function' && typeof canSendViewConversion === 'function' && window.isAuthenticated && canSendViewConversion()) {
+            if (sha256Email) {
+                gtag('set', 'user_data', { 'sha256_email_address': sha256Email });
+            }
+            //Event snippet for 2 Page View conversion page
+            gtag('event', 'conversion', { 'send_to': 'AW-797221335/GbWrCJ6Ht5wYENfDkvwC', 'transaction_id': clientUserId });
+
+            setAdsPageViewCookie();
+        }
+
+        var referrer = '';
+        var pageType = 'Template Page Preview';
+        sendAnalyticsFromUrl(referrer, pageType);
+
+        if (location.href.indexOf('/frame/') === -1) {
+            PureCookie.initCookieConsent({
+                description: 'By using this website, you automatically accept that we use cookies. Learn more about our ',
+                link: '<a href="https://nicepage.com/Privacy" target="_blank"> privacy and cookies policy</a>.',
+                buttonCaption: "Accept",
+                opacity: 0.88,
+            });
+        }
+    });
+</script>
+
+<!--
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-KGP3NM3':true});</script>
+-->    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-797221335"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        var options = {};
+        var awOptions = { 'allow_enhanced_conversions': true };
+        if (clientUserId > 0) {
+            options.user_id = clientUserId;
+            awOptions.user_id = clientUserId;
+        }
+        // gtag('config', 'GA_TRACKING_ID', { 'optimize_id': 'OPT_CONTAINER_ID'});
+        gtag('config', 'AW-797221335', awOptions);
+        gtag('config', 'G-T7WWB0T53W', options);
+    </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            if(window.hideFacebookPixelCode !== true) {
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '251025992170426', {
+                    em: ''
+                });
+                fbq('track', 'PageView');
+            }
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=251025992170426&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
+
+<!-- Amplitude Code -->
+<script type="text/javascript">
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+            ;r.type="text/javascript"
+            ;r.integrity="sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW"
+            ;r.crossOrigin="anonymous";r.async=true
+            ;r.src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"
+            ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
+                console.log("[Amplitude] Error: could not load SDK")}}
+            ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+            ;function s(e,t){e.prototype[t]=function(){
+            this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+        var o=function(){this._q=[];return this}
+            ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+            ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+                ;return this}
+            ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+            ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+            ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+            ;function v(e){function t(t){e[t]=function(){
+                e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+            for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+                e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+                    ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+            ;e.amplitude=n})(window,document);
+    amplitude.getInstance().init("878f4709123a5451aff838c1f870b849");
+</script>
+
+<script>
+var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSetCookie(e,a,r,s,t){if(e&&a){var o,n=s?"; path="+s:"",i=t?"; domain="+t:"",S="";r&&((o=new Date).setTime(o.getTime()+r),S="; expires="+o.toUTCString()),document.cookie=e+"="+a+S+n+i+"; SameSite=None;Secure"}}function shareasaleGetParameterByName(e,a){a||(a=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var r=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(a);return r?r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):"":null}shareasaleSSCID&&shareasaleSetCookie("shareasaleSSCID",shareasaleSSCID,94670778e4,"/");
+</script>
+
+
+
+
+
+
+<script src="//capp.nicepage.com/00ba2a2f94defc72a66f213b34558c1d0ea762eb/main-libs.js"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/797221335/?random=1702135521197&amp;cv=11&amp;fst=1702135521197&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3bt0v9101312129&amp;gcd=11l1l1l1l1&amp;dma=0&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fnicepage.com%2Fhtml-templates%2Fpreview%2Fwe-help-your-site-grow-4914174%3Fdevice%3Ddesktop&amp;ref=https%3A%2F%2Fnicepage.com%2Fht%2F4914174%2Fwe-help-your-site-grow-html-template&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=We%20help%20your%20site%20grow%20HTML%20Template%20Live%20Demo&amp;auid=1878838346.1702135491&amp;fledge=1&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B119.0.6045.105%7CChromium%3B119.0.6045.105%7CNot%253FA_Brand%3B24.0.0.0&amp;uamb=0&amp;uap=macOS&amp;uapv=13.6.1&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+<link href="//capp.nicepage.com/00ba2a2f94defc72a66f213b34558c1d0ea762eb/main-libs.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+
+    
+    <meta name="robots" content="noindex, nofollow">
+    <script type="text/javascript">
+        var device = 'desktop';
+        function init($) {
+            $('#previewDesktopBtn').click(function (e) {
+                setLivePreviewFrameSize($(this));
+                setActiveResponsiveButton(this);
+                e.preventDefault();
+            });
+
+            $('#previewLaptopBtn').click(function (e) {
+                setLivePreviewFrameSize($(this));
+                setActiveResponsiveButton(this);
+                e.preventDefault();
+            });
+            $('#previewTabletBtn').click(function (e) {
+                setLivePreviewFrameSize($(this));
+                setActiveResponsiveButton(this);
+                e.preventDefault();
+            });
+            $('#previewPhoneHorizontalBtn').click(function (e) {
+                setLivePreviewFrameSize($(this));
+                setActiveResponsiveButton(this);
+                e.preventDefault();
+            });
+            $('#previewPhoneBtn').click(function (e) {
+                setLivePreviewFrameSize($(this));
+                setActiveResponsiveButton(this);
+                e.preventDefault();
+            });
+
+            detectActiveResponsiveButton();
+        }
+
+        if (jQuery.isReady) {
+            init(jQuery);
+        } else {
+            jQuery(function ($) {
+                init($);
+            });
+        }
+
+        function setActiveResponsiveButton(btn) {
+            $(".page-preview-header > a").removeClass("active");
+            $(btn).addClass("active");
+        }
+
+        function detectActiveResponsiveButton() {
+            var d = device;
+            if (!d) {
+                d = 'desktop';
+            }
+            $("#preview" + d.charAt(0).toUpperCase() + d.substr(1) + "Btn").click();
+        }
+
+        function getDataPreviewSizeAttr(el) {
+            return el.closest("[data-preview-size]").attr("data-preview-size");
+        }
+
+        function setLivePreviewFrameSize(srcEl) {
+            var getScrollbarWidth = function () {
+                var s = $('<div style="width:100px;height:100px;overflow:scroll;visibility:hidden;position:absolute;top:-99999px"><div style="height:200px;"></div></div>')
+                    .appendTo("body");
+                var res = s.width() - s.find("div").last().width();
+                s.remove();
+                return res;
+            };
+            var attr = getDataPreviewSizeAttr(srcEl);
+            $('#livePreviewFrame').width(attr.indexOf("%") !== -1 ? attr : parseInt(attr, 10) + getScrollbarWidth());
+        }
+
+    </script>
+    <style>
+        .dialog-wrapper {
+            display: none !important;
+        }
+
+        .wrap,
+        #main {
+            height: 100vh;
+            margin: 0 !important;
+        }
+
+        iframe {
+            display: none;
+        }
+
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .page-preview {
+            border-radius: 0;
+            height: 100%;
+        }
+
+        .page-preview-header {
+            background: #f2f2f2;
+            border: none;
+            height: 70px;
+            position: relative;
+            text-align: center;
+        }
+
+        .page-preview-header > a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 4px;
+        }
+
+        .page-preview-header > a:hover {
+            background: #e2f0fc;
+            text-decoration: none;
+        }
+
+        .page-preview-header > a.active {
+            background: #c9e4f9;
+        }
+
+        .page-preview-header > .close {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .page-preview-body {
+            height: calc(100% - 70px);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-preview-body iframe {
+            border: none;
+            display: inline-block;
+            height: 100%;
+        }
+    </style>
+
+</head>
+    <body>
+        
+
+
+<div class="page-preview">
+    <div class="page-preview-header">
+        <a class="hidden-sm hidden-xs active" href="#" id="previewDesktopBtn" data-preview-size="100%"><img alt="Responsive Desktop Mode" src="//csite.nicepage.com/Images/Site/responsive-desktop.png"></a>
+        <a class="hidden-sm hidden-xs" href="#" id="previewLaptopBtn" data-preview-size="1040px"><img alt="Responsive Laptop Mode" src="//csite.nicepage.com/Images/Site/responsive-laptop.png"></a>
+        <a class="hidden-xs" href="#" id="previewTabletBtn" data-preview-size="820px"><img alt="Responsive Tablet Mode" src="//csite.nicepage.com/Images/Site/responsive-tablet.png"></a>
+        <a class="hidden-xs" href="#" id="previewPhoneHorizontalBtn" data-preview-size="640px"><img alt="Responsive Phone Horizontal Mode" src="//csite.nicepage.com/Images/Site/responsive-phone-horizontal.png"></a>
+        <a class="hidden-xs" href="#" id="previewPhoneBtn" data-preview-size="440px"><img alt="Responsive Phone Mode" src="//csite.nicepage.com/Images/Site/responsive-phone.png"></a>
+        <a class="close" href="/ht/4914174/we-help-your-site-grow-html-template"><img alt="Close" src="//csite.nicepage.com/Images/Site/icon-close.png"></a>
+    </div>
+    <div class="page-preview-body">
+        <iframe id="livePreviewFrame" src="https://website4092501.nicepage.io/Page-8.html?version=071f363f-3439-4ffd-8aae-c11dbe4b2186" width="1057" height="640" style="width:100%;"></iframe>
+    </div>
+</div>
+<a style="position:absolute;top:17px;left:10px;" href="/"><img alt="NicePage.com" src="//csite.nicepage.com/Images/logo-w.png"></a>
+
+        <script>
+            if (window.parent) {
+                var _w = 0, _h = 0;
+                var updateFormSize = function () {
+                    var form = $('form.shaped-form-extended,form.shaped-form');
+                    var w = form.outerWidth(true);
+                    var h = form.outerHeight(true);
+                    if (Math.abs(_w - w) > 5 || Math.abs(_h - h) > 5) {
+                        _w = w;
+                        _h = h;
+                        var msg = { key: 'login-frame-size', width: w, height: h };
+                        window.parent.postMessage(msg, "*");
+                    }
+                    setTimeout(updateFormSize, 300);
+                }
+                updateFormSize();
+            }
+        </script>
+    
+</body></html>
